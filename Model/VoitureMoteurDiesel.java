@@ -11,19 +11,19 @@ public class VoitureMoteurDiesel extends VoitureMontee {
     }
 
     public float getAcceleration() {
-       return 130;
+       return wrapper.getAcceleration();
     }
 
     public float getFreinage() {
-        return 70;
+        return wrapper.getFreinage();
     }
 
     public float getMasse() {
-        return 300;
+        return wrapper.getMasse() + 300;
     }
 
     public float getPrix() {
-        return 12999;
+        return wrapper.getPrix() + 200;
     }
 
     @Override

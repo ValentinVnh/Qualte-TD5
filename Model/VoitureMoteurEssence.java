@@ -11,19 +11,19 @@ public class VoitureMoteurEssence extends VoitureMontee {
     }
 
     public float getAcceleration() {
-        return 80;
+        return wrapper.getAcceleration();
     }
 
     public float getFreinage() {
-        return 30;
+        return wrapper.getFreinage();
     }
 
     public float getMasse() {
-        return 200;
+        return wrapper.getMasse() + 200;
     }
 
     public float getPrix() {
-       return 18999;
+       return wrapper.getPrix() + 1000;
     }
 
     @Override
